@@ -1,0 +1,42 @@
+<h1>Badge overlap</h1>
+<button (click)="incNotif()">notif ++</button>
+<div>
+  <span [matBadge]="notifications" matBadgePosition="before">Notification</span>
+</div>
+<div>
+  <span matBadge="4" matBadgeOverlap="false">Notification</span>
+</div>
+
+<h1>color</h1>
+<div>
+  <span matBadge="4" matBadgeOverlap="false" matBadgeColor="primary"
+    >Notification</span
+  >
+</div>
+<div>
+  <span matBadge="4" matBadgeOverlap="false" matBadgeColor="accent"
+    >Notification</span
+  >
+</div>
+<div>
+  <span matBadge="4" matBadgeOverlap="false" matBadgeColor="warn"
+    >Notification</span
+  >
+</div>
+
+<h1>Size</h1>
+<div>
+  <span matBadge="4" matBadgeOverlap="false" matBadgeSize="small"
+    >Notification</span
+  >
+</div>
+<div>
+  <span matBadge="4" matBadgeOverlap="false" matBadgeSize="medium"
+    >Notification</span
+  >
+</div>
+<div>
+  <span matBadge="4" matBadgeOverlap="false" matBadgeSize="large"
+    >Notification</span
+  >
+</div>
