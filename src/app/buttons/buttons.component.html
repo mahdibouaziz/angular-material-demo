@@ -56,3 +56,21 @@
 <button mat-mini-fab color="accent">
   <mat-icon>bookmark</mat-icon>
 </button>
+<mat-divider></mat-divider>
+
+<p>Selecting only once</p>
+<mat-button-toggle-group [(ngModel)]="tech">
+  <mat-button-toggle value="angular"> Angular </mat-button-toggle>
+  <mat-button-toggle value="react"> React </mat-button-toggle>
+  <mat-button-toggle value="vue"> Vue </mat-button-toggle>
+</mat-button-toggle-group>
+<p *ngIf="tech">chossen tech is {{ tech }}</p>
+
+<mat-divider></mat-divider>
+<p>Selecting multiple</p>
+<mat-button-toggle-group multiple [(ngModel)]="tech1">
+  <mat-button-toggle value="angular"> Angular </mat-button-toggle>
+  <mat-button-toggle value="react"> React </mat-button-toggle>
+  <mat-button-toggle value="vue"> Vue </mat-button-toggle>
+</mat-button-toggle-group>
+<p *ngIf="tech1">chossen tech is {{ tech1 }}</p>
