@@ -1,0 +1,12 @@
+.side__nav__container {
+  height: 100%;
+}
+.side__nav,
+.side__nav__content {
+  padding: 2rem !important;
+}
+
+.side__nav {
+  background-color: rgb(241, 119, 119);
+  width: 200px;
+}

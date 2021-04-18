@@ -1,0 +1,16 @@
+<mat-sidenav-container class="side__nav__container">
+  <mat-sidenav class="side__nav" mode="push" #sidenav [(opened)]="opened"
+    >SideNav</mat-sidenav
+  >
+  <mat-sidenav-content class="side__nav__content"
+    >Main
+
+    <button mat-raised-button color="primary" (click)="togggleSideBar()">
+      Open sideBar
+    </button>
+
+    <button mat-raised-button color="primary" (click)="sidenav.toggle()">
+      toggle sideBar
+    </button>
+  </mat-sidenav-content>
+</mat-sidenav-container>
