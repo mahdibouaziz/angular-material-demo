@@ -15,7 +15,21 @@
   position: fixed;
   z-index: 2;
   color: #fff;
+  display: inherit;
 }
 .nav-icon {
   font-size: 2rem;
+}
+.nav-for-pc {
+  display: none;
+}
+
+/* Media for PC */
+@media only screen and (min-width: 767px) {
+  .nav-toggle {
+    display: none;
+  }
+  .nav-for-pc {
+    display: flex;
+  }
 }

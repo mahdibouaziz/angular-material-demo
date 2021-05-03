@@ -7,12 +7,15 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
   @Input() drawer;
+  @Input() mobile;
 
   constructor() {}
 
   ngOnInit(): void {}
 
   toggleDrawer(): void {
-    this.drawer.toggle();
+    if (this.mobile) {
+      this.drawer.toggle();
+    }
   }
 }
