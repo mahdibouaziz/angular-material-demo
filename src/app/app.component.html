@@ -1,1 +1,20 @@
-<app-home></app-home>
+<mat-drawer-container class="drawer-container" hasBackdrop="true">
+  <mat-drawer class="drawer" #drawer mode="over"
+    ><app-nav [drawer]="drawer"></app-nav
+  ></mat-drawer>
+  <mat-drawer-content>
+    <button
+      [ngStyle]="{
+        backgroundColor: togglebgColor
+      }"
+      mat-button
+      class="nav-toggle"
+      (click)="drawer.toggle()"
+    >
+      <mat-icon class="nav-icon">menu</mat-icon>
+    </button>
+
+    <app-header></app-header>
+    <div style="height: 400px"></div>
+  </mat-drawer-content>
+</mat-drawer-container>

@@ -1,0 +1,21 @@
+.drawer-container {
+  height: 100vh;
+}
+
+.drawer {
+  width: 200px;
+  background-color: #f2f2f2;
+}
+
+.nav-toggle {
+  padding-top: 0.1rem;
+  padding-bottom: 0.7rem;
+  padding-right: 0.4rem;
+  padding-left: 0rem;
+  position: fixed;
+  z-index: 2;
+  color: #fff;
+}
+.nav-icon {
+  font-size: 2rem;
+}

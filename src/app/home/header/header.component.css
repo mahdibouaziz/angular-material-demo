@@ -29,6 +29,9 @@
 .description > p {
   color: #fff;
   font-size: 1.2rem;
+  margin: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .buttons {
