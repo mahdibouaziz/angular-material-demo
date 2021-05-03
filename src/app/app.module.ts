@@ -5,9 +5,11 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './home/home/home.component';
+import { HeaderComponent } from './home/header/header.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, HomeComponent, HeaderComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
